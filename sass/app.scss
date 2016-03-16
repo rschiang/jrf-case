@@ -1,3 +1,6 @@
+$aleo-font-path: '../vendor/aleo-webfont/fonts';
+@import "../vendor/aleo-webfont/scss/aleo-regular";
+@import "../vendor/aleo-webfont/scss/aleo-regular";
 
 @mixin large-up {
     @media screen and (min-width: 40em) {
@@ -38,6 +41,7 @@ article.case {
 
 .case {
     color: #212121;
+    font-family: "Biaodian Pro Sans CNS", Aleo, "Roboto Slab", "Trebuchet MS", "Zhuyin Heiti", "Han Heiti", sans-serif;
 
     .meta-row {
         margin: 2em 0;

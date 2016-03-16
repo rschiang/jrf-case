@@ -36,6 +36,68 @@ article.case {
     }
 }
 
+.case {
+    color: #212121;
+
+    .meta-row {
+        margin: 2em 0;
+        line-height: 1.35;
+        color: #9e9e9e;
+
+        &:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+    }
+
+    .meta-col {
+        float: left;
+        width: 50%;
+
+        &:last-child {
+            float: right;
+        }
+    }
+
+    .meta-avatar {
+        float: left;
+        margin-right: .3em;
+    }
+
+    .meta-summary span, .meta-cause {
+        font-size: .8em;
+        display: block;
+    }
+
+    .meta-summary .meta-date {
+        font-size: .7em;
+    }
+
+    .meta-cause {
+        text-align: right;
+    }
+}
+
+.meta-icon {
+    display: block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+    background: #bdbdbd;
+    color: white;
+    border-radius: 50%;
+
+    /* Use weight 400 from material design colors */
+    &.criminal { background: #ec407a; }
+    &.civil { background: #42a5f5; }
+    &.admin { background: #7e57c2; }
+    &.appeal { background: #ffca28; }
+    &.none { background: #66bb6a; }
+}
+
 .meta-hidden {
     display: none;
 }

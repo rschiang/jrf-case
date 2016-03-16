@@ -1,2 +1,37 @@
-// Hello world
-@import "materialize";
+
+@mixin large-up {
+    @media screen and (min-width: 40em) {
+        @content;
+    }
+}
+
+@mixin xlarge-up {
+    @media screen and (min-width: 80em) {
+        @content;
+    }
+}
+
+.container {
+    margin: auto;
+    padding: 0 1em;
+
+    @include large-up {
+        & {
+            max-width: 40em;
+            padding: 0;
+        }
+    }
+
+    @include xlarge-up {
+        & { max-width: 48em; }
+    }
+}
+
+article.case {
+    @include large-up {
+        & { font-size: 18px; }
+    }
+    @include xlarge-up {
+        & { font-size: 20px; }
+    }
+}
